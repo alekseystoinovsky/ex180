@@ -1,4 +1,4 @@
-FROM w520:5555/library/ubi7-init 
+FROM registry.access.redhat.com/ubi7-init
 
 MAINTAINER Ohubohu
 
