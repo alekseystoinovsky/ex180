@@ -1,10 +1,12 @@
-FROM quay.io/eclipse/che-java11-maven:latest
+FROM w520:5555/library/ubi7-init 
 
-MAINTAINER tech-tejendra
+MAINTAINER Ohubohu
 
 USER root
 
-COPY src /home/app/src
+RUN useradd -m app && mkdir -p /home/app/src
+
+COPY Containerfile /home/app/src
 COPY pom.xml /home/app
 
 #ERROR
