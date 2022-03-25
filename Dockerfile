@@ -10,11 +10,11 @@ COPY Containerfile /home/app/src
 COPY pom.xml /home/app
 
 #ERROR
-RUN nocmd
+#RUN nocmd
 
 RUN mkdir -p /var/local/SP
 
-RUN mvn -f /home/app/pom.xml clean package
+RUN yum -y update && yum install -y openssh
 
 EXPOSE 8080
 
