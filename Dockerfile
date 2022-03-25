@@ -14,8 +14,8 @@ COPY pom.xml /home/app
 
 RUN mkdir -p /var/local/SP
 
-RUN yum -y update && yum install -y openssh
+RUN yum -y update && yum install -y openssh && yun clean all
 
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar", "/home/app/target/spring-boot-hello-world-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["jecho", "Hello world ", "/home/app/target/spring-boot-hello-world-0.0.1-SNAPSHOT.jar"]
