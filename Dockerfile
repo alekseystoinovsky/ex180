@@ -14,7 +14,7 @@ COPY pom.xml /home/app
 
 RUN mkdir -p /var/local/SP
 
-RUN yum -y update && yum install -y openssh && yun clean all
+RUN yum -y update && yum install -y openssh && yum clean all
 
 EXPOSE 8080
 
