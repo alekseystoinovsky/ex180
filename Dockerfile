@@ -18,4 +18,4 @@ RUN yum -y update && yum install -y openssh && yum clean all
 
 EXPOSE 8080
 
-ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["/usr/sbin/init"]
