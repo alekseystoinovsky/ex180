@@ -18,4 +18,4 @@ RUN yum -y update && yum install -y openssh && yum clean all
 
 EXPOSE 8080
 
-ENTRYPOINT ["jecho", "Hello world ", "/home/app/target/spring-boot-hello-world-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["echo", "Hello world ", "/home/app/target/spring-boot-hello-world-0.0.1-SNAPSHOT.jar"]
